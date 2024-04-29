@@ -57,13 +57,10 @@ button {
 .page-nav {
   display: flex;
   align-items: center;
-  margin: auto;
 }
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .menu {
@@ -127,7 +124,6 @@ button {
 /* ============== HERO ============== */
 
 .order-service {
-  display: flex;
   background: #2e2f42;
   padding: 188px 0;
   background-repeat: no-repeat;
@@ -142,9 +138,6 @@ button {
 }
 
 .order-container {
-  margin: 0 auto;
-  padding-top: 68px;
-  padding-bottom: 68px;
 }
 
 .main-title {
@@ -154,7 +147,8 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  padding-bottom: 48px;
+  margin: 0 auto;
+  margin-bottom: 48px;
   max-width: 496px;
 }
 
@@ -209,7 +203,6 @@ button {
 
 .benefits-list {
   display: flex;
-  /* justify-content: space-between; */
   gap: 24px;
 }
 
@@ -232,10 +225,13 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-right: 24px;
 }
 
 /* ============== OUR TEAM ============== */
+
+.soc-link:hover {
+  background-color: #404bbf;
+}
 
 .soc-link {
   height: 40px;
@@ -278,7 +274,6 @@ button {
 
 .our-team-list {
   display: flex;
-  justify-content: space-between;
   gap: 24px;
 }
 
@@ -297,6 +292,7 @@ button {
 }
 
 .our-team-item {
+  width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
@@ -332,6 +328,7 @@ button {
 }
 
 .our-portfolio-item {
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .our-portfolio-info {
@@ -365,6 +362,14 @@ button {
   padding-bottom: 100px;
 }
 
+.footer-container {
+  display: flex;
+}
+
+.footer-logo-container {
+  margin-right: 120px;
+}
+
 .footer-page-logo {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -382,6 +387,43 @@ button {
 }
 
 .footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.footer-soc-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-soc-container {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-soc-link {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-soc-link .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-soc-link:hover {
+  background-color: #31d0aa;
 }
