@@ -415,6 +415,15 @@ button {
   color: #434455;
 }
 
+.our-portfolio-text:hover {
+  transform: translateY(0%);
+}
+
+.our-portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
 /* ============== FOOTER  ============== */
 
 .footer {
