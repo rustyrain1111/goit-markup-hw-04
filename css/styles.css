@@ -496,25 +496,21 @@ button {
 }
 
 .footer-soc-container {
-  align-items: baseline;
+  /* align-items: baseline; */
   display: flex;
   gap: 16px;
   margin-top: 16px;
 }
 
 .footer-soc-link {
+  display: flex;
   height: 100%;
   width: 100%;
-  display: flex;
+
   background-color: #4d5ae5;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-}
-
-.footer-soc-link .icon {
-  width: 16px;
-  height: 16px;
 }
 
 .footer-soc-link:hover,
@@ -530,4 +526,5 @@ button {
 .footer-soc-item {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
